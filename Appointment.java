@@ -28,7 +28,6 @@ public class Appointment implements Comparable<Appointment>{
 		return description;
 	}
 
-	//Not sure why this is needed, constructor has description
 	public void setDescription(String description){
 		this.description = description;
 	}
