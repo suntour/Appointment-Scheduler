@@ -30,13 +30,11 @@ public class AppointmentFrame extends JFrame{
 	SimpleDateFormat simpleFormat;
 	SimpleDateFormat hmFormat;
 
-	//JComponents that need to be accessed are listed here, else in their methods
 	JTextArea description;
 
 	JTextField day;
 	JTextField month;
 	JTextField year;
-
 	JTextField hour;
 	JTextField minute;
 
@@ -271,6 +269,7 @@ public class AppointmentFrame extends JFrame{
 		description.setText("");
 	}
 
+	//Print appointment
 	public void printAppointments(int day, int month, int year){
 		clear();
 		for(int i = 0; i < appointments.size(); i++){
@@ -281,6 +280,7 @@ public class AppointmentFrame extends JFrame{
 		setVisible(true);
 	}
 
+	//Create appointment
 	public void createAppointment(int year, int month, int day, int hour, int minute){
 		//Check if an appointment with the same time exists
 		for(int i = 0; i < appointments.size(); i++){
